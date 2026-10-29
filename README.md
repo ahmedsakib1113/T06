@@ -2,6 +2,8 @@
 
 COS30045 Data Visualisation — Sakib Ahmed
 
+Live site: https://ahmedsakib1113.github.io/T06/
+
 ## Exercises
 
 - **T06-1:** Energy-consumption histogram with 200 kWh/year bins, screen-technology filters, screen-size filters, and animated updates.
