@@ -1,0 +1,34 @@
+/* Compact layout and histogram styling to match the tutorial example. */
+:root { --accent: #d36718; --accent-dark: #a64a0e; --bg: #fffaf0; --text: #60462f; }
+body { max-width: 800px; margin: 20px auto; height: auto; }
+header { padding: 22px; box-shadow: none; }
+header h1 { color: var(--text); }
+main { padding: 26px 22px 12px; }
+main h2 { font-size: 28px; line-height: 1.5; }
+main p { color: var(--text); }
+#filters_screen, #filters_size { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 4px; }
+#filters_screen .filter, #filters_size .filter {
+    min-width: 96px; padding: 8px 12px; border: 0; border-radius: 4px;
+    background: var(--accent); color: white; font-size: 16px; font-weight: 600;
+    cursor: pointer; box-shadow: none;
+}
+#filters_screen .filter.active, #filters_size .filter.active { background: #ffd080; color: #60462f; }
+.filter:focus-visible { outline: 3px solid #60462f; outline-offset: 3px; }
+.responsive-svg-container { width: 100%; margin: 0 0 4px; }
+svg { display: block; width: 100%; height: auto; background: var(--bg); }
+.axis text { font-size: 11px; fill: var(--text); }
+.axis path, .axis line { stroke: #8e7866; }
+.axis-label { font-family: Arial, sans-serif; font-size: 13px; fill: var(--text); }
+#status { margin-top: 12px; font-size: 13px; font-variant-numeric: tabular-nums; }
+.body { margin-top: 20px; font-size: 13px; }
+footer p { color: white; }
+@media(max-width: 600px) {
+    body { margin: 0; } main { padding: 20px 14px; }
+    main h2 { font-size: 23px; }
+    #filters_screen, #filters_size { gap: 8px; }
+    #filters_screen .filter, #filters_size .filter { min-width: 64px; font-size: 14px; }
+}
+
+.scatter-section { margin-top: 30px; padding-top: 22px; border-top: 1px solid #ddcebe; }
+.scatter-legend text { fill: var(--text); font-size: 13px; }
+.tv-point { cursor: crosshair; }
